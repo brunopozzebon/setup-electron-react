@@ -2,7 +2,7 @@
 
 Um setup extremamente básico para rodar sua aplicação web construída com ReactJS em plataformas desktop (Windows, Linux e Mac)
 
-![Imagem de capa](./cover.png)
+![Imagem de capa](./cover.PNG)
 
 ## Instalação :wrench:
 

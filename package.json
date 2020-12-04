@@ -1,0 +1,52 @@
+{
+  "name": "setup-electron-react",
+  "version": "0.1.0",
+  "main": "public/electron.js",
+  "author": "Bruno Pozzebon",
+  "description": "Setup do framework react js, integrado com o electron, para build em plataformas desktop",
+  "build": {
+    "appId": "setup-electron-react.com",
+    "win": {
+      "icon": "build/icon.jpg"
+    }
+  },
+  "homepage": "./",
+  "dependencies": {
+    "cross-env": "^7.0.2",
+    "electron-is-dev": "^1.2.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1"
+  },
+  "scripts": {
+    "react-start": "react-scripts start",
+    "react-build": "react-scripts build",
+    "react-test": "react-scripts test",
+    "react-eject": "react-scripts eject",
+    "electron-build": "electron-builder",
+    "build": "yarn react-build && yarn electron-build",
+    "start": "concurrently \"cross-env BROWSER=none yarn react-start\" \"wait-on http://localhost:3000 && electron .\""
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "electron": "^9.1.1",
+    "electron-builder": "^22.7.0",
+    "wait-on": "^5.1.0"
+  }
+}

@@ -20,7 +20,18 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(240, 240, 240);
+}
+
+.card{
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  align-items: center;
+  padding: 30px 50px;
+  border-radius: 6px;
+  box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.05);
 }
 
 img{
